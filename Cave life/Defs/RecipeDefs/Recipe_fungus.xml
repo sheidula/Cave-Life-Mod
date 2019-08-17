@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+<RecipeDef>
+    <defName>Make_RawFungus</defName>
+    <label>make raw fungus</label>
+    <description>Soak mushroom wood in a brew of cave salts and natural acids to soften it and get rid of various toxins, transforming it into edible raw fungus.</description>
+    <jobString>Making raw fungus.</jobString>
+    <workAmount>70</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
+	<ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MushroomWoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+   </ingredients>
+    <products>
+      <RawFungus>10</RawFungus>
+    </products>
+	<fixedIngredientFilter>
+		<thingDefs>
+            <li>MushroomWoodLog</li>
+          </thingDefs>
+	</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	<researchPrerequisite>MushroomTrees</researchPrerequisite>
+  </RecipeDef>
+  
+  
+  <RecipeDef>
+    <defName>Make_MassRawFungus</defName>
+    <label>make mass raw fungus</label>
+    <description>Soak mushroom wood in a brew of cave salts and natural acids to soften it and get rid of various toxins, transforming it into edible raw fungus.</description>
+    <jobString>Making raw fungus.</jobString>
+    <workAmount>700</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+
+    	<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
+	<ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MushroomWoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+   </ingredients>
+    <products>
+      <RawFungus>100</RawFungus>
+    </products>
+	<fixedIngredientFilter>
+		<thingDefs>
+            <li>MushroomWoodLog</li>
+          </thingDefs>
+	</fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	<researchPrerequisite>MushroomTrees</researchPrerequisite>
+  </RecipeDef>
+
+</Defs>

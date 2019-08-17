@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchTabDef>
+		<defName>CavelifeTab</defName>
+		<label>Cave life</label>
+	</ResearchTabDef>
+
+<ResearchProjectDef Name="Caveliferesearch" Abstract="True">
+	<techLevel>Neolithic</techLevel>
+	<tab>CavelifeTab</tab>
+  </ResearchProjectDef>
+
+ <ResearchProjectDef ParentName="Caveliferesearch">
+    <defName>MushroomTrees</defName>
+    <label>mushroom trees</label>
+    <description>The giant fungi arent just for looks. We must find a way to use them.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0.75</researchViewY>
+    <prerequisites>
+      <li>TreeSowing</li>
+    </prerequisites>
+	<tab>Cavelife</tab>
+ </ResearchProjectDef>
+
+
+ <ResearchProjectDef ParentName="Caveliferesearch">
+    <defName>CavelifeGear1</defName>
+    <label>Coastal equipment</label>
+    <description>Craft equipment used by various coastal folk.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <researchViewX>0</researchViewX>
+    <researchViewY>3.75</researchViewY>
+	<tab>Cavelife</tab>
+ </ResearchProjectDef>
+	
+	
+	
+</Defs>

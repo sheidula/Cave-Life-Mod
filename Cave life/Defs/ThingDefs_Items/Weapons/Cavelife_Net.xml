@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>Net</defName>
+    <label>net</label>
+    <description>A crude, bundled fishing net. You don't want to be a fish trapped in one of these.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Net</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+    <costList>
+      <stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+    </costList>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.60</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+    </weaponTags>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Net_Thrown</defaultProjectile>
+        <warmupTime>4</warmupTime>
+        <range>12</range>
+        <soundCast>Interact_BeatFire</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>body</label>
+        <capacities>
+          <li>Stun</li>
+        </capacities>
+        <power>2</power>
+         <cooldownTime>2</cooldownTime>
+		 <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>30</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+	<recipeMaker>
+      <researchPrerequisite>CavelifeGear1</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Net_Thrown</defName>
+    <label>net</label>
+    <graphicData>
+      <texPath>Things/Projectile/Net</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Blunt</damageDef>
+      <damageAmountBase>2</damageAmountBase>
+      <stoppingPower>10</stoppingPower>
+      <armorPenetrationBase>0.10</armorPenetrationBase>
+      <speed>18</speed>
+    </projectile>
+  </ThingDef>
+
+
+</Defs>
+

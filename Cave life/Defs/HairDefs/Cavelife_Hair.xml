@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HairDef>
+    <defName>Cavelife_SmallFin</defName>
+    <label>small fin</label>
+    <hairGender>Any</hairGender>
+    <texPath>Things/Pawn/Troglodite/Hairs/Cavelife_SmallFin</texPath>
+		<hairTags>
+			<li>Cavelife_Troglodite</li>
+		</hairTags>
+  </HairDef>
+  <HairDef>
+    <defName>Cavelife_LargeFin</defName>
+    <label>large fin</label>
+    <hairGender>Any</hairGender>
+    <texPath>Things/Pawn/Troglodite/Hairs/Cavelife_LargeFin</texPath>
+		<hairTags>
+			<li>Cavelife_Troglodite</li>
+		</hairTags>
+  </HairDef>
+  <HairDef>
+    <defName>Cavelife_Beardeddevil</defName>
+    <label>bearded devil</label>
+    <hairGender>Any</hairGender>
+    <texPath>Things/Pawn/Troglodite/Hairs/Cavelife_Smalldualfin</texPath>
+		<hairTags>
+			<li>Cavelife_Troglodite</li>
+		</hairTags>
+  </HairDef>
+  <HairDef>
+    <defName>Cavelife_Catfish</defName>
+    <label>catfish</label>
+    <hairGender>Any</hairGender>
+    <texPath>Things/Pawn/Troglodite/Hairs/Cavelife_Largedualfin</texPath>
+		<hairTags>
+			<li>Cavelife_Troglodite</li>
+		</hairTags>
+  </HairDef>
+  
+</Defs>

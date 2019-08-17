@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="CavePlantBase">
+    <defName>Mushroomtree</defName>
+    <label>mushroom tree</label>
+    <description>An enormous, tree-like mushroom. Its dense fiber is indigestible, but can be used as a substitute for wood. Its spores glow softly when reacting to the water that gathers in its "branches". It dies when exposed to light.</description>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Beauty>10</Beauty>
+      <Nutrition>0.2</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Mushroomtree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.2, 0.3, 0.13)</volume>
+        <offset>(-0.03,0,-0.44)</offset>
+      </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <pathCost>25</pathCost>
+    <ingestible />
+    <plant>
+      <fertilityMin>0.01</fertilityMin>
+      <fertilitySensitivity>0.15</fertilitySensitivity>
+      <growDays>45</growDays>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestYield>35</harvestYield>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>MushroomWoodLog</harvestedThingDef>
+      <neverBlightable>true</neverBlightable>
+	  <sowWork>4000</sowWork>
+      <sowMinSkill>6</sowMinSkill>
+      <sowResearchPrerequisites>
+        <li>MushroomTrees</li>
+      </sowResearchPrerequisites>
+	  <harvestFailable>false</harvestFailable>
+		<sowTags>
+			<li>Ground</li>
+			<li>Decorative</li>
+		</sowTags>
+      <visualSizeRange>
+        <min>2</min>
+        <max>5</max>
+      </visualSizeRange>
+      <topWindExposure>0.1</topWindExposure>
+      <cavePlantWeight>0.16</cavePlantWeight>
+	  <wildClusterRadius>6</wildClusterRadius>
+      <wildClusterWeight>8</wildClusterWeight>
+    </plant>
+	<altitudeLayer>BuildingOnTop</altitudeLayer>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>15</glowRadius>
+        <glowColor>(23,15,30,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+  
+
+
+</Defs>  

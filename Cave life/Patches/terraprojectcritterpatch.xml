@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+            <li>Terra Project (Core)</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName = "Troll"]/race/wildBiomes</xpath>
+                    <value>
+                        <CaveOasis>0.3</CaveOasis>
+						<TunnelworldCave>0.2</TunnelworldCave>
+						<CaveEntrance>0.2</CaveEntrance>
+						<InfestedMountains>0.2</InfestedMountains>
+						<DeepRavine>0.1</DeepRavine>
+						
+						<Archipelago>0.1</Archipelago>
+						<VolcanicIsland>0.1</VolcanicIsland>
+						<TundraSkerries>0.1</TundraSkerries>
+						<Atoll>0.1</Atoll>
+						
+						<Oasis>0.1</Oasis>
+						<SpikeMountains>0.1</SpikeMountains>
+						<DesertHighPlains>0.1</DesertHighPlains>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName = "Troglodite"]/race/wildBiomes</xpath>
+                    <value>
+                        <CaveOasis>0.5</CaveOasis>
+						<TunnelworldCave>0.2</TunnelworldCave>
+						<CaveEntrance>0.1</CaveEntrance>
+						<InfestedMountains>0.1</InfestedMountains>
+						<DeepRavine>0.1</DeepRavine>
+						<Archipelago>0.2</Archipelago>
+						<VolcanicIsland>0.2</VolcanicIsland>
+						<TundraSkerries>0.1</TundraSkerries>
+						<Atoll>0.1</Atoll>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

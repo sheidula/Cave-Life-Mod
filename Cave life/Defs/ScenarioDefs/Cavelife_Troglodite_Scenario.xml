@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ScenarioDef>
+    <defName>Cavelife_OutcastsofDagon</defName>
+    <label>Troglodites - Outcasts of Dagon</label>
+    <description>Father Dagon has forsaken us! The Sea drained into caverns below, we are left to dry out! We must survive, survive long enough to appeal to Lord Dagon.</description>
+    <scenario>
+      <summary>Five troglodites and maybe an animal?.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>PlayerTribe</factionDef>
+      </playerFaction>
+      <parts>
+
+        <!-- Config pages -->
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>4</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+
+        <!-- Player starting stuff spawn method-->
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+          <visible>false</visible>
+        </li>
+
+		<!-- Starting research -->
+		<li Class="ScenPart_StartingResearch">
+			<def>StartingResearch</def>
+			<project>Stonecutting</project>
+		</li>
+		<li Class="ScenPart_StartingResearch">
+			<def>StartingResearch</def>
+			<project>PassiveCooler</project>
+		</li>
+		<li Class="ScenPart_StartingResearch">
+			<def>StartingResearch</def>
+			<project>Pemmican</project>
+		</li>
+		
+        <!-- Player starting things -->
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>800</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Pemmican</thingDef>
+          <count>300</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineHerbal</thingDef>
+          <count>30</count>
+        </li>
+		
+		<li Class="ScenPart_StartingThing_Defined">
+			<def>StartingThing_Defined</def>
+			<thingDef>MeleeWeapon_Knife</thingDef>
+			<stuff>Jade</stuff>
+		</li>
+		<li Class="ScenPart_StartingThing_Defined">
+			<def>StartingThing_Defined</def>
+			<thingDef>MeleeWeapon_Spear</thingDef>
+			<stuff>Jade</stuff>
+			<count>2</count>
+		</li>
+		<li Class="ScenPart_StartingThing_Defined">
+			<def>StartingThing_Defined</def>
+			<thingDef>Pila</thingDef>
+			<count>2</count>
+		</li>
+
+        <!-- Scatter some things near player start -->
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>Steel</thingDef>
+          <count>50</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>150</count>
+        </li>      
+
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>Steel</thingDef>
+          <count>120</count>
+        </li>
+        
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+</Defs>

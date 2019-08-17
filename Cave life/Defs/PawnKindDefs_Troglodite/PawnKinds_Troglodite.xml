@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<PawnKindDef Name="TribalBase" Abstract="True">
+    <race>Troglodite</race>
+    <defaultFactionType>Pirate</defaultFactionType>
+    <backstoryCategories>
+      <li>Tribal</li>
+    </backstoryCategories>
+    <maxGenerationAge>60</maxGenerationAge>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <invNutrition>2.55</invNutrition>
+    <invFoodDef>Pemmican</invFoodDef>
+    <apparelTags>
+      <li>Neolithic</li>
+    </apparelTags>
+  </PawnKindDef>
+
+	<PawnKindDef ParentName="TribalBase">
+    <defName>Troglodite_Basic</defName>
+    <label>scavenger</label>
+    <combatPower>60</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <canBeSapper>true</canBeSapper>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>200</min>
+      <max>300</max>
+    </apparelMoney>
+    <apparelRequired>
+      <li>Apparel_WarVeil</li>
+    </apparelRequired>
+    <weaponMoney>
+      <min>150</min>
+      <max>150</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeDecent</li>
+    </weaponTags>
+  </PawnKindDef>
+
+</Defs>

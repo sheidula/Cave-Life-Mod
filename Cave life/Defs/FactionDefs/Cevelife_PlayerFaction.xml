@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>Cavelife_PlayerTribe</defName>
+		<label>New Den</label>
+		<description>A small tribe.</description>
+		<isPlayer>true</isPlayer>
+		<pawnSingular>troglodite</pawnSingular>
+		<pawnsPlural>troglodites</pawnsPlural>
+		<basicMemberKind>Troglodite</basicMemberKind>
+		<techLevel>Neolithic</techLevel>
+		<backstoryCategories>
+			<li>Tribal</li>
+		</backstoryCategories>
+		<expandingIconTexture>World/WorldObjects/Expanding/Village</expandingIconTexture>
+		<homeIconPath>World/WorldObjects/TribalSettlement</homeIconPath>
+		<pawnNameMaker>NamerPersonTribal</pawnNameMaker>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<geneticVariance>1</geneticVariance>
+		<forageabilityFactor>1.7</forageabilityFactor>
+		<startingResearchTags>
+			<li>TribalStart</li>
+		</startingResearchTags>
+		<hairTags>
+			<li>Cavelife_Troglodite</li>
+		</hairTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<recipePrerequisiteTags>
+			<li>Tribal</li>
+		</recipePrerequisiteTags>
+	</FactionDef>
+
+</Defs>
